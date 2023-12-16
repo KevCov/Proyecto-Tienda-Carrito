@@ -1,0 +1,16 @@
+<div class="Products">
+  <form class="form-search" >
+    <input class="form-input" type="text" placeholder="Search a product" (input)="emitNameSearch($event)"/>
+  </form>
+  <div class="products-list">
+    <div class="block-product" *ngFor="let p of productos | nameSearchPipe:nameSearch ">
+      <p class="p">{{ p.title }}</p>
+      <p class="p">Category : {{ p.category }}</p>
+      <img src="{{ p.image }}" width="220px" height="180px" />
+      <div class="price-btn">
+        <p>$ {{ p.price }}</p>
+        <button class="btn" (click)="addCar(p)">Buy it</button>
+      </div>
+    </div>
+  </div>
+</div>

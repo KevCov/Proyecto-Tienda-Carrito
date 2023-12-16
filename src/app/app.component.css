@@ -1,0 +1,6 @@
+.Principal {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 66% 30%;
+  column-gap: 50px;
+}

@@ -1,0 +1,17 @@
+<div class="Shopping-car">
+  <h1>Shopping Car</h1>
+  <table>
+    <tr class="table-titles">
+      <td class="table-width-title">TITLE</td>
+      <td class="table-width-price">PRICE</td>
+      <td class="table-width-options">OPTIONS</td>
+    </tr>
+    <tr class="table-product" *ngFor="let cp of carProducts; let indice = index;">
+      <td class="table-width-title">{{ cp.title }}</td>
+      <td class="table-width-price">$ {{ cp.price }}</td>
+      <td class="table-width-options"><button (click)="deleteCarProduct(indice)">Delete</button></td>
+    </tr>
+  </table>
+  <p>TOTAL : {{total | currency:"USD"}}</p>
+  <button *ngIf="total>0" >Pagar</button>
+</div>

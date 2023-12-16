@@ -1,0 +1,34 @@
+.Shopping-car {
+  width: 100%;
+  margin-top: 55px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-titles {
+  color: white;
+  font-weight: bold;
+  border-bottom: 1px dotted blue;
+}
+.table-width-title {
+  width: 60%;
+  padding: 6px;
+  border-right: 1px dotted blue;
+}
+.table-width-price {
+  width: 20%;
+  padding-left: 6px;
+  border-right: 1px dotted blue;
+}
+.table-width-options {
+  width: 20%;
+  padding-left: 6px;
+}
+.table-width-options button:hover{
+  cursor: pointer;
+  background-color: brown;
+}
+.table-product {
+  border-bottom: 1px dotted blue;
+}

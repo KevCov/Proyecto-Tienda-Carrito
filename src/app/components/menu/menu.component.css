@@ -1,0 +1,10 @@
+.Menu {
+  width: 100%;
+  text-align: center;
+}
+.name-page {
+  font-size: 42px;
+  font-weight: bold;
+  color: blueviolet;
+  margin: 25px;
+}
